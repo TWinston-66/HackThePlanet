@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-[Link button](http://example.com/){: .btn .btn-purple }
+[Link button](http://www.google.com/){: .btn .btn-purple }
 
 You can use the [editor on GitHub](https://github.com/TWinston-66/Writeups/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
