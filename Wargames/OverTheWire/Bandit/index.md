@@ -2,7 +2,7 @@
 layout: default
 title: Bandit
 nav_order: 4
-parent: Wargames
+parent: OverTheWire
 ---
 
 # Utilities
