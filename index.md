@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-{{#markdown-bold action=(action (mut value)) for="input"}}Bold{{/markdown-bold}}
+[![Watch on GitHub](https://img.shields.io/github/watchers/jonsn0w/hyde.svg?style=social)](https://github.com/jonsn0w/Hyde/watchers)
 
 You can use the [editor on GitHub](https://github.com/TWinston-66/Writeups/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
