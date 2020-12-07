@@ -8,7 +8,7 @@ grand_parent: Wargames
 
 # Bandit: OverTheWire
 
-**Here is the [link](https://overthewire.org/wargames/bandit/) to the original challenge page**
+**Here is the [link](https://twinston-66.github.io/HackThePlanet/) to the original challenge page**
 
 **Make sure to read the README file on the OverTheWire-Writeups repo **
 
@@ -21,3 +21,4 @@ grand_parent: Wargames
 
 >4. If you have any questions join the Discord server linked on the [Home](https://https://twinston-66.github.io/HackThePlanet/) page of this website and you can DM me or ask any questions on the server
 
+d
