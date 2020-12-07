@@ -10,7 +10,6 @@ grand_parent: Wargames
 
 **Here is the [link](https://twinston-66.github.io/HackThePlanet/) to the original challenge page**
 
-**Make sure to read the README file on the OverTheWire-Writeups repo **
 
 ### Note:
 >1. I am using Windows with [Ubuntu WSL2](https://ubuntu.com/wsl) in the [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab). You can also use [putty](https://putty.org/) or a virtual machine. 
