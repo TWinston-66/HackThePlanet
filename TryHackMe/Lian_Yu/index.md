@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lian_Yu
-has_exclude: true
+nav_exclude: true
 ---
 
 # Lian_Yu 
