@@ -19,4 +19,4 @@ ou can use the [editor on GitHub](https://github.com/TWinston-66/Writeups/edit/g
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-![](/assests/images/Logo.png)
+![](https://i.imgur.com/jO8aV40.jpg?1)
