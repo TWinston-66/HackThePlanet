@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Bandit0
+nav_exclude: true
 ---
 
 ### Written By: TWinston-66 
