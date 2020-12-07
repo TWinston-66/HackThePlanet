@@ -4,7 +4,7 @@ title: Bandit0
 ---
 
 ### Written By: TWinston-66 
-#### 12/07/20
+### 12/07/20
 # Bandit: Level 0
 
 ![bandit level-0](https://i.imgur.com/pNbJPT4.png)
@@ -23,4 +23,4 @@ This is the given password for the user `bandit0`
 
 Once you have connected then proceed to Level 0-1
 
-##### After each level you can use the `clear` command to clear the screen for a fresh start each level
+### After each level you can use the `clear` command to clear the screen for a fresh start each level
