@@ -1,3 +1,8 @@
+---
+layout: default
+title: Bandit0
+---
+
 ### Written By: TWinston-66 
 #### 12/07/20
 # Bandit: Level 0
