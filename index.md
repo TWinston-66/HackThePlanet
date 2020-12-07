@@ -15,3 +15,5 @@ In depth writeups for many CTF, Wargames, TryHackMe boxes, and more.
 
 [View it on GitHub](https://github.com/TWinston-66/HackThePlanet){: .btn .fs-5 .mb-4 .mb-md-0 }
 
+## CTF Writeups
+I will post writsups to challenges and boxes as I solve them. The goal of this is for anyone who visits the site to learn something. Including myself. 
