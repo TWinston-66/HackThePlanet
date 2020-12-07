@@ -26,5 +26,9 @@ Once you have connected then proceed to Level 0-1
 
 ### After each level you can use the `clear` command to clear the screen for a fresh start each level
 
+
+
+
+
 [Next Level](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1/){: .btn .btn-blue }
 [Back](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/){: .btn .btn-blue }
