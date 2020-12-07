@@ -5,7 +5,7 @@ nav_order: 1
 # description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages." -->
 permalink: /
 ---
-![](https://i.imgur.com/GedTeTQ.png?2) 
+![](https://i.imgur.com/GedTeTQ.png?4) 
 
 # Welcome to HackThePlanet
 {: .fs-9 }
