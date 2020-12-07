@@ -20,4 +20,4 @@ grand_parent: Wargames
 
 >4. If you have any questions join the Discord server linked on the [Home](https://https://twinston-66.github.io/HackThePlanet/) page of this website and you can DM me or ask any questions on the server
 
-[Level 0](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0/index.md){: .btn .btn-blue }
+[Level 0](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0/index.md){: .btn .btn-blue }[Level 1](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0/index.md){: .btn .btn-blue }
