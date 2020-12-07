@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Seasonal
-nav_order: 5
-has_children: true
+title: Advent of Code 202
+nav_exclude: true
 ---
 
-# Seasonal
+# Advent of Code 2020
