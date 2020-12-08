@@ -34,6 +34,10 @@ Then the password for the next level gets outputed
 - Copy the password `UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK`
 - Type `exit` to logut
 
+
+
+
+
 [Bandit](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/){: .btn .btn-blue }
 [Back](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit2){: .btn .btn-blue }
 [Next Level](https://twinston-66.github.io/HackThePlanet/docs/writeup-not-posted-bandit){: .btn .btn-blue }
