@@ -23,3 +23,7 @@ grand_parent: Wargames
 [Level 0](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0/){: .btn .btn-blue }          
 
 [Level 1](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1){: .btn .btn-blue }
+
+[Level 2](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit2){: .btn .btn-blue }
+
+[Level 3](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit3){: .btn .btn-blue }
