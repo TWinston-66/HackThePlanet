@@ -5,7 +5,7 @@ nav_order: 1
 has_children: true
 parent: Wargames
 ---
-
+{: .no_toc }
 # OverTheWire
 **Here is the [link](https://overthewire.org/wargames/) to the original challenge page**
 
