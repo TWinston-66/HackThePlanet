@@ -8,7 +8,7 @@ grand_parent: Wargames
 
 # Bandit: OverTheWire
 
-**Here is the [link](https://twinston-66.github.io/HackThePlanet/) to the original challenge page**
+**Here is the [link](https://overthewire.org/wargames/bandit) to the original challenge page**
 
 
 ### Note:
