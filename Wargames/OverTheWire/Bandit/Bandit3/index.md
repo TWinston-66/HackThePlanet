@@ -29,10 +29,10 @@ To read the file we need to add `'` before and after the file name
 
 We add the `'` so that the machine can recognize the spaces that are being used in the file name 
 
-Then the password for the next level gets outputed 
+Then the password for the next level gets outputted 
 
 - Copy the password `UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK`
-- Type `exit` to logut
+- Type `exit` to logout
 
 
 

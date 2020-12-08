@@ -27,7 +27,7 @@ To read the file we need to add a `./` before the file name
 
 We add the `./` so that the machine can recognize the special character `-` that is being used as the file name 
 
-Then the password for the next level gets outputed
+Then the password for the next level gets outputted
 
 - Copy the password `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`
 - Type `exit` to logout

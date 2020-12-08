@@ -14,7 +14,7 @@ grandparent: OverTheWire
 
 The goal of this level is to get the password for the next level out of the `readme` file 
 
-To acommplish this we need to output the contents of a file
+To accomplish this we need to output the contents of a file
 
 First we need to log in using the steps from the last level 
 
@@ -27,7 +27,7 @@ To find this file we need to search the home directory for any directorys or fil
 
 This displays all the files and directorys in the current (home) directory 
 
-We can then see that a file named `readme` is outputed 
+We can then see that a file named `readme` is outputted 
 
 This is the file we are looking for 
 
@@ -35,7 +35,7 @@ This is the file we are looking for
 
 This outputs the contents of the file `readme`
 
-Then the password for the next level gets outputed 
+Then the password for the next level gets outputted 
 
 - Copy the password `boJ9jbbUNNfktd78OOpsqOltutMc3MY1`
 - Type `exit` to logout 

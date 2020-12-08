@@ -11,7 +11,7 @@ parent: Wargames
 
 ### Wargames
 The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
-To veiw the writeups for a certain wargame, just visit its page linked from the menu on the left or click the button below.
+To view the writeups for a certain wargame, just visit its page linked from the menu on the left or click the button below.
 
 The suggested order to play the games in
 1. Bandit
