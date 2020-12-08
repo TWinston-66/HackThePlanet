@@ -9,7 +9,7 @@ permalink: /
 # Welcome to HackThePlanet
 {: .fs-9 }
 
-In depth writeups for many CTF, Wargames, TryHackMe boxes, and more. 
+In depth writeups for many CTF, Wargames, TryHackMe boxes, and more.  
 {: .fs-6 .fw-300 }
 
 [View it on Github](https://github.com/TWinston-66/HackThePlanet){: .btn .fs-5 .mb-4 .mb-md-0 }     
@@ -22,6 +22,4 @@ The point of writeups are to allow for a person to learn the conecpts being used
 ## Socials 
 If you have any recoomindations, requests for a specific writeup, or any questions you can find me in the following places. 
 
-[GitHub](https://github.com/TWinston-66){: .btn .fs-5 .mb-4 .mb-md-0 }           
-
-[Discord](https://discord.gg/BpJMKG5aRP){: .btn .fs-5 .mb-4 .mb-md-0 }
+[GitHub](https://github.com/TWinston-66){: .btn .fs-5 .mb-4 .mb-md-0 }           [Discord](https://discord.gg/BpJMKG5aRP){: .btn .fs-5 .mb-4 .mb-md-0 }
