@@ -2,6 +2,8 @@
 layout: default
 title: Bandit0
 nav_exclude: true
+parent: Bandit
+grandparent: OverTheWire
 ---
 
 ### Written By: TWinston-66 
@@ -29,6 +31,6 @@ Once you have connected then proceed to Level 0-1
 
 
 
-
+[Bandit](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/){: .btn .btn-blue }
 [Next Level](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1/){: .btn .btn-blue }
 [Back](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/){: .btn .btn-blue }

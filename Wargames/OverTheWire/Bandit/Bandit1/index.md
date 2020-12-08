@@ -2,6 +2,8 @@
 layout: default
 title: Bandit1
 nav_exclude: true
+parent: Bandit
+grandparent: OverTheWire
 ---
 
 ### Written By: TWinston-66 
