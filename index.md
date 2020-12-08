@@ -20,6 +20,6 @@ You can find the different challenge catagories in the navigation bar to the lef
 The point of these writeups are to allow for a person to learn the conecpts being used in the challenges. Therefore please do not use these merrly to solve the challenge, use them to learn.
 
 ## Socials 
-If you have any recoomindations, requests for a specific writeup, or any questions you can find me in the following places. 
+If you have any recoomindations, or requests for a specific writeup, or any questions at  all, you can find me in the following places...
 
 [GitHub](https://github.com/TWinston-66){: .btn .fs-5 .mb-4 .mb-md-0 }                   [Discord](https://discord.gg/BpJMKG5aRP){: .btn .fs-5 .mb-4 .mb-md-0 }
