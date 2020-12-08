@@ -14,10 +14,10 @@ In depth writeups for many CTFs, Wargames, TryHackMe boxes, and more.
 
 [View repo on Github](https://github.com/TWinston-66/HackThePlanet){: .btn .fs-5 .mb-4 .mb-md-0 }     
 ## Writeups
-You can find the different challenge catagories in the navigation bar to the left. I will post writeups to the challenges, levels, boxes or whatever they may be as I solve them...so be sure to check back later if a level you want is not posted yet. 
+You can find the different challenge catagories in the navigation bar to the left. I will post writeups to the challenges, levels, boxes or whatever they may be as I solve them...so be sure to check back later if a writeup you want is not posted yet. 
 
 ## How to Use
-The point of writeups are to allow for a person to learn the conecpts being used. Therefore please do not use these merrly to solve the challenge, use them to learn.
+The point of these writeups are to allow for a person to learn the conecpts being used in the challenges. Therefore please do not use these merrly to solve the challenge, use them to learn.
 
 ## Socials 
 If you have any recoomindations, requests for a specific writeup, or any questions you can find me in the following places. 
