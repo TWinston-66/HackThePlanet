@@ -22,7 +22,7 @@ grand_parent: Wargames
 
 [Level 0](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0/){: .btn .btn-blue }                                                    
 
-[Level 1](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1){: .btn .btn-blue .flex-justify-between }               
+[Level 1](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1){: .btn .btn-blue }               
 
 [Level 2](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit2){: .btn .btn-blue }              
 
@@ -40,7 +40,7 @@ grand_parent: Wargames
 
 [Level 9](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit9){: .btn .btn-blue }
 
-[Level 10](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit10){: .btn .btn-blue }
+[Level 10](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit10){: .btn .btn-blue .mr-4}
 
 [Level 11](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit11){: .btn .btn-blue }
 
