@@ -20,7 +20,7 @@ grand_parent: Wargames
 
 >4. If you have any questions join the Discord server linked on the [Home](https://https://twinston-66.github.io/HackThePlanet/) page of this website and you can DM me or ask any questions on the server
 
-[Level 0](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0/){: .btn .btn-blue }          
+[Level 0](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0/){: .btn .btn-blue }                                      
 
 [Level 1](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1){: .btn .btn-blue }
 
@@ -37,3 +37,27 @@ grand_parent: Wargames
 [Level 7](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit7){: .btn .btn-blue }
 
 [Level 8](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit8){: .btn .btn-blue }
+
+[Level 9](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit9){: .btn .btn-blue }
+
+[Level 10](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit10){: .btn .btn-blue }
+
+[Level 11](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit11){: .btn .btn-blue }
+
+[Level 12](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit12){: .btn .btn-blue }
+
+[Level 13](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit13){: .btn .btn-blue }
+
+[Level 14](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit14){: .btn .btn-blue }
+
+[Level 15](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit15){: .btn .btn-blue }
+
+[Level 16](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit16){: .btn .btn-blue }
+
+[Level 17](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit17){: .btn .btn-blue }
+
+[Level 18](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit18){: .btn .btn-blue }
+
+[Level 19](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit19){: .btn .btn-blue }
+
+[Level 20](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit20){: .btn .btn-blue }
