@@ -40,7 +40,7 @@ grand_parent: Wargames
 
 [Level 9](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit9){: .btn .btn-blue }
 
-[Level 10](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit10){: .btn .btn-blue .mr-4}
+[Level 10](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit10){: .btn .btn-blue }
 
 [Level 11](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit11){: .btn .btn-blue }
 
