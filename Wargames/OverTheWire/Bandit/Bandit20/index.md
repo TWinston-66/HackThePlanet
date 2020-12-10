@@ -71,4 +71,4 @@ When this is run the `cat` command does its job and outputs the password
 
 [Bandit](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/){: .btn .btn-blue }
 [Back](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit19){: .btn .btn-blue }
-[Next Level](https://twinston-66.github.io/HackThePlanet/docs/writeup-not-posted-bandit){: .btn .btn-blue }
+[Next Level](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit21){: .btn .btn-blue }
