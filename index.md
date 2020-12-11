@@ -9,7 +9,8 @@ permalink: /
 # Welcome to HackThePlanet
 {: .fs-9 }
 
-In depth writeups for many CTFs, Wargames, TryHackMe boxes, and more.  
+In depth writeups for many CTFs, Wargames, TryHackMe boxes, and more. 
+Created By: TWinston-66 
 {: .fs-6 .fw-300 }
 
 [View repo on Github](https://github.com/TWinston-66/HackThePlanet){: .btn .fs-5 .mb-4 .mb-md-0 }     
