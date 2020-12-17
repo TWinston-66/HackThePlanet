@@ -1,3 +1,6 @@
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
-#logo: "HackThePlanet/assets/images/Logo.png"
+
+# Google Analytics Tracking
+ga_tracking: G-7SFBH7F8QV
+ga_tracking_anonymize_ip: true 
