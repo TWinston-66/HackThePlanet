@@ -5,6 +5,7 @@ nav_order: 1
 permalink: /
 ---
 ![](https://i.imgur.com/GedTeTQ.png?4) 
+![](https://tryhackme.com/badge/123402) 
 
 # Welcome to HackThePlanet
 {: .fs-9 }
