@@ -12,3 +12,6 @@ TryHackMe rooms are an amazing way for people of every skill level to get hands 
 [Clear](https://twinston-66.github.io/HackThePlanet/TryHackMe/Clear%20Answers){: .btn .btn-blue }
 
 [Unclear](https://twinston-66.github.io/HackThePlanet/TryHackMe/Unclear%20Answers){: .btn .btn-blue }
+
+## Coming Soon! 
+### TryHackMe Crack The Hashes Room!
