@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Clear Answers
+title: Crack The Hash
 nav_order: 1
 has_children: true
 parent: TryHackMe
 ---
 
-# Clear Answers 
+# Crack The Hash 
