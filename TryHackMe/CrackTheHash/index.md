@@ -17,6 +17,6 @@ parent: TryHackMe
 
 3. If you have any questions join the Discord server linked on the [Home](https://https://twinston-66.github.io/HackThePlanet/) page of this website and you can DM me or ask any questions on the server
 
-[Task 1](https://twinston-66.github.io/HackThePlanet/TryHackMe/CrackTheHash/Task1){: .btn .btn-blue .mr-10 }                  [Task 2](https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit11){: .btn .btn-blue .mr-10 }
+[Task 1](https://twinston-66.github.io/HackThePlanet/TryHackMe/CrackTheHash/Task1){: .btn .btn-blue .mr-10 }                  [Task 2](https://twinston-66.github.io/HackThePlanet/TryHackMe/CrackTheHash/Task2){: .btn .btn-blue .mr-10 }
 
 
