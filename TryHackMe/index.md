@@ -5,8 +5,17 @@ nav_order: 4
 has_children: true
 ---
 
-# TryHackMe
+### TryHackMe
+The rooms that are offered by TryHackMe, are an excellent way to learn cyber security through gamified real-world labs. 
+To view the writeups for a certain room, just visit its page linked from the menu on the left or click the button below.
 
-TryHackMe rooms are an amazing way for people of every skill level to get hands on experience. There will be two different versions of the writeups. One version will not have clear flags and cracked hashes while the other will. Both versions can be accessed via the navigation bar. Below are links to both types of writeups.
+Remember that for each room you need to connect to the TryHackMe VPN 
+
+Then start the room's machine if it has one
+
+A good guide for this can be found [here](https://tryhackme.com/access)... 
+
+
+
 
 [Crack The Hash](https://twinston-66.github.io/HackThePlanet/TryHackMe/CrackTheHash){: .btn .btn-blue }
