@@ -1,0 +1,162 @@
+I"ê<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-1213">Bandit: Level 12â†’13</h1>
+
+<p><img src="https://i.imgur.com/RmLrRom.png" alt="bandit level-12-13" /></p>
+
+<p>The goal of this level is to decompress the original file until we get a text file that we can read the password from</p>
+
+<p>To accomplish this are going to make a reverse hex dump then use many different compression commands to decompress the file</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit12@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu</code></li>
+</ul>
+
+<p>When we do a quick search with the <code class="language-plaintext highlighter-rouge">ls</code> command we can see that the file named <code class="language-plaintext highlighter-rouge">data.txt</code> is located in the home directory</p>
+
+<p>Before we continue we are going to do what the challenge problem suggests</p>
+
+<p>We are going to create a directory to work in, inside the <code class="language-plaintext highlighter-rouge">/tmp</code> where temporary files and directories are stored in linux</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">mkdir /tmp/bandit12</code></li>
+</ul>
+
+<p>We then copy the original <code class="language-plaintext highlighter-rouge">data.txt</code> into that directory</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cp data.txt /tmp/bandit12</code></li>
+</ul>
+
+<p>We then go into our tmp directory to begin working</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cd /tmp/bandit12</code></li>
+</ul>
+
+<p>If we output the data using the <code class="language-plaintext highlighter-rouge">cat</code> command we get an output of a hex dump of a file named <code class="language-plaintext highlighter-rouge">data2.bin</code></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">cat data.txt</code></li>
+</ul>
+
+<p>We can then do a reverse hex dump with the command <code class="language-plaintext highlighter-rouge">xxd</code> command then store it in a file named <code class="language-plaintext highlighter-rouge">data</code></p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat data.txt | xxd -r &gt; data</code></li>
+</ul>
+
+<p>We then need to determine the type of file our new file named <code class="language-plaintext highlighter-rouge">data</code> is</p>
+
+<p>We can do this with the <code class="language-plaintext highlighter-rouge">file</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">file data</code></li>
+</ul>
+
+<p>This command then tells us that it is a gzip compressed file</p>
+
+<p>Because of the challenge prompt we can assume that the next step is to unzip that file</p>
+
+<p>But first we have to make sure our tools can recognize the file as a gzip</p>
+
+<p>To do this we are going to use the <code class="language-plaintext highlighter-rouge">mv</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">mv data data2.gz</code></li>
+</ul>
+
+<p>We are renaming the original <code class="language-plaintext highlighter-rouge">data</code> file to a <code class="language-plaintext highlighter-rouge">.gz</code> file</p>
+
+<p>We add the number each time we rename to we can keep track of the files we have made and changed</p>
+
+<p>Now we need to unzip our new file and to do that we are going to use the <code class="language-plaintext highlighter-rouge">gzip</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">gzip -d data2.gz</code></li>
+</ul>
+
+<p>If we run and <code class="language-plaintext highlighter-rouge">ls</code> we can see that a new file named <code class="language-plaintext highlighter-rouge">data2</code> was extracted</p>
+
+<p>We then run a <code class="language-plaintext highlighter-rouge">file</code> command on that file</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">file data2</code></li>
+</ul>
+
+<p>We can then see that the new file is a <code class="language-plaintext highlighter-rouge">bzip2</code> file</p>
+
+<p>And once again we have to extract this file but first we have to rename it</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">mv data2 data3.bz</code></li>
+</ul>
+
+<p>To extract this file we use the <code class="language-plaintext highlighter-rouge">bzip2</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">bzip2 -d data3.bz</code></li>
+</ul>
+
+<p>Then we continue this process of extracting and renaming the files until we are left with a text file that contains the raw password</p>
+
+<p>Instead of explaining each steps I have just put the rest of the commands in a code snippet below</p>
+
+<p><code class="language-plaintext highlighter-rouge">mv data3 data4.gz</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">gzip -d data4.gz</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">file data4</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">mv data4 data5.tar</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">tar -xf data5.tar</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">file data5.bin</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">mv data5.bin data6.tar</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">tar -xf data6.tar</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">file data6.bin</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">mv data6.bin data7.bz</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">bzip2 -d data7.bz</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">file data7</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">mv data7 data8.tar</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">tar -xf data8.tar</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">file data8.bin</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">mv data8.bin data9.gz</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">gzip -d data9.gz</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">file data9</code></p>
+
+<p>Finally we are left with a text file named <code class="language-plaintext highlighter-rouge">data9</code></p>
+
+<p>We can use the <code class="language-plaintext highlighter-rouge">cat</code> command the view the password</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat data9</code></li>
+</ul>
+
+<p>When this command is run it outputs <code class="language-plaintext highlighter-rouge">The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL</code></p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit12" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit14" class="btn btn-blue">Next Level</a></p>
+:ET

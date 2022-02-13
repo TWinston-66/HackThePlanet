@@ -1,0 +1,40 @@
+I"Í	<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-1011">Bandit: Level 10â†’11</h1>
+
+<p><img src="https://i.imgur.com/JGMGAkB.png" alt="bandit level-10-11" /></p>
+
+<p>The goal of this level is to get the password for the next level in a file called <code class="language-plaintext highlighter-rouge">data.txt</code> that is encoded with base64</p>
+
+<p>To accomplish this we are going to use the <code class="language-plaintext highlighter-rouge">base64</code> command to decode the data inside the file and retrive the password</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit10@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk</code></li>
+</ul>
+
+<p>When we do a quick search with the <code class="language-plaintext highlighter-rouge">ls</code> command we can see that the file named <code class="language-plaintext highlighter-rouge">data.txt</code> is located in the home directory</p>
+
+<p>If we output the data using the <code class="language-plaintext highlighter-rouge">cat</code> command we get an output of a string that looks very similar to the password format however we can tell that is encoded with base64</p>
+
+<p>To decode the string from base64 we need to use the <code class="language-plaintext highlighter-rouge">base64</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat data.txt | base64 -d</code></li>
+</ul>
+
+<p>When this command is run it will decode the output of the <code class="language-plaintext highlighter-rouge">cat</code> command from base64</p>
+
+<p>It then outputs <code class="language-plaintext highlighter-rouge">The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR</code></p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit10" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit12" class="btn btn-blue">Next Level</a></p>
+:ET

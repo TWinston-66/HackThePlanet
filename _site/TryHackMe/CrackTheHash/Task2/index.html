@@ -1,0 +1,49 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="71521">7/15/21</h3>
+<h1 id="crack-the-hash-task-2">Crack The Hash: Task 2</h1>
+
+<h2 id="hash-1">Hash #1</h2>
+
+<p><img src="https://i.imgur.com/UMuqni7.png" alt="Hash1" /></p>
+
+<p>Remember to add the new hash to the <code class="language-plaintext highlighter-rouge">hash.hash</code> file</p>
+
+<p>First we need to find out what type of hash this hash is..</p>
+
+<p>We will again be using the TunnelsUP Hash Analyzer</p>
+
+<p>Hash Analyzer tells us that this hash is a SHA2-256 hash</p>
+
+<p>This hash can be cracked using the command…</p>
+
+<ul>
+  <li>hashcat -m 1400 hash.hash rockyou.txt</li>
+</ul>
+
+<p>When this command is run, you should get an output similar to this…</p>
+
+<p><img src="https://i.imgur.com/6k7lUnz.png" alt="Cracked1" /></p>
+
+<p>You can read all of the stats that Hashcat gave us but the important part is the place where it gives us the cracked hash</p>
+
+<p><code class="language-plaintext highlighter-rouge">F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85: *CRACKED HASH RESULT*</code></p>
+
+<p>## Hash #2</p>
+
+<p><img src="https://i.imgur.com/a1K26Wv.png" alt="Hash2" /></p>
+
+<p>The hint tells us that this hash is a NTLM hash</p>
+
+<p>This hash can be cracked using the command…</p>
+
+<ul>
+  <li>hashcat -m 1000 hash.hash rockyou.txt</li>
+</ul>
+
+<p>When this command is run, you should get an output similar to this…</p>
+
+<p><img src="https://i.imgur.com/exV1wSy.png" alt="Cracked2" /></p>
+
+<p>You can read all of the stats that Hashcat gave us but the important part is the place where it gives us the cracked hash</p>
+
+<p><code class="language-plaintext highlighter-rouge">1DFECA0C002AE40B8619ECF94819CC1B: *CRACKED HASH RESULT*</code></p>

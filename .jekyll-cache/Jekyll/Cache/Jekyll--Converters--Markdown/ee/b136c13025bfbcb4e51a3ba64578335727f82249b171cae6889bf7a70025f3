@@ -1,0 +1,43 @@
+I"²<h1 id="bandit-overthewire">Bandit: OverTheWire</h1>
+
+<p><strong>Here is the <a href="https://overthewire.org/wargames/bandit">link</a> to the original challenge page</strong></p>
+
+<h3 id="note">Note:</h3>
+<ol>
+  <li>
+    <p>I am using Windows with <a href="https://ubuntu.com/wsl">Ubuntu WSL2</a> in the <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Windows Terminal</a>. You can also use <a href="https://putty.org/">putty</a> or a virtual machine.</p>
+  </li>
+  <li>
+    <p>My solutions will most likely not be the only way or the correct way to complete the challenges. Therefore take what I say with a grain of salt.</p>
+  </li>
+  <li>
+    <p>I will be posting writeups for the challenges as I solve them so keep an eye out for more.</p>
+  </li>
+  <li>
+    <p>If you have any questions join the Discord server linked on the <a href="https://https://twinston-66.github.io/HackThePlanet/">Home</a> page of this website and you can DM me or ask any questions on the server</p>
+  </li>
+</ol>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0/" class="btn btn-blue mr-10">Level 0</a>                  <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit11" class="btn btn-blue mr-10">Level 11</a>                 <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit22" class="btn btn-blue">Level 22</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1" class="btn btn-blue mr-10">Level 1</a>                   <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit12" class="btn btn-blue">Level 12</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit2" class="btn btn-blue mr-10">Level 2</a>                   <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit13" class="btn btn-blue">Level 13</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit3" class="btn btn-blue mr-10">Level 3</a>                   <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit14" class="btn btn-blue">Level 14</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit4" class="btn btn-blue mr-10">Level 4</a>                   <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit15" class="btn btn-blue">Level 15</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit5" class="btn btn-blue mr-10">Level 5</a>                 <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit16" class="btn btn-blue">Level 16</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit6" class="btn btn-blue mr-10">Level 6</a>                   <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit17" class="btn btn-blue">Level 17</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit7" class="btn btn-blue mr-10">Level 7</a>                   <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit18" class="btn btn-blue">Level 18</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit8" class="btn btn-blue mr-10">Level 8</a>                   <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit19" class="btn btn-blue">Level 19</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit9" class="btn btn-blue mr-10">Level 9</a>                   <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit20" class="btn btn-blue">Level 20</a></p>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit10" class="btn btn-blue mr-10">Level 10</a>                <a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit21" class="btn btn-blue">Level 21</a></p>
+
+:ET

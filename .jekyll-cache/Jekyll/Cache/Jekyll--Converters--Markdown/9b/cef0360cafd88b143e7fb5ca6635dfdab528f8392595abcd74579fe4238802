@@ -1,0 +1,58 @@
+I"5<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-56">Bandit: Level 5→6</h1>
+
+<p><img src="https://i.imgur.com/mcktwpp.png" alt="bandit level-5-6" /></p>
+
+<p>The goal of this level is very similar to the last level. We have to find a human-readable file however this time we have more info to use to find the file among an even bigger group to search through</p>
+
+<p>To accomplish this we are going to navigate into the <code class="language-plaintext highlighter-rouge">inhere</code> directory then search for the file that meets all of the requirements using the find command</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit5@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">koReBOKuIDDepwhWk7jZC0RTdopnAYKh</code></li>
+</ul>
+
+<p>We then need to navigate into the <code class="language-plaintext highlighter-rouge">inhere</code> directory again using the <code class="language-plaintext highlighter-rouge">cd</code> command</p>
+
+<p>Once inside we can see a whole bunch of directories that contain even more files</p>
+
+<p>For this search we can use the <code class="language-plaintext highlighter-rouge">find</code> command with some arguments</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">find ./ -type f -size 1033c ! -executable</code></li>
+</ul>
+
+<p>In the command we use the <code class="language-plaintext highlighter-rouge">find</code> command which allows us to search for specific files</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">./</code> part looks for all files including hidden ones</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">-type f -size 1033c</code> part looks for file that are 1033 bytes in size</p>
+
+<p>Finally the <code class="language-plaintext highlighter-rouge">! -executable</code> looks for files that are not executables</p>
+
+<p>The command will output any files that meet all of those requirements</p>
+
+<p>When we run the command it gives us the file <code class="language-plaintext highlighter-rouge">./maybehere07/.file2</code></p>
+
+<p>This output tells us that the file is a file inside the directory <code class="language-plaintext highlighter-rouge">maybehere07</code> named <code class="language-plaintext highlighter-rouge">file2</code></p>
+
+<p>To read the data from that file we can use the <code class="language-plaintext highlighter-rouge">cat</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat ./maybehere07/.file2</code></li>
+</ul>
+
+<p>Then the password for the next level gets outputted</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">DXjZPULLxYr17uwoI01bNLQbtFemEgo7</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit5" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit7" class="btn btn-blue">Next Level</a></p>
+:ET

@@ -1,0 +1,40 @@
+I"”<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-89">Bandit: Level 8â†’9</h1>
+
+<p><img src="https://i.imgur.com/NCJ6yoK.png" alt="bandit level-8-9" /></p>
+
+<p>The goal of this level is to get the password for the next level in a file called <code class="language-plaintext highlighter-rouge">data.txt</code> in the string that only occurs once</p>
+
+<p>To accomplish this we can use piping and the sort command to find the only unique string in the file</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit8@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">cvX2JJa4CFALtqS87jk27qwqGhBM9plV</code></li>
+</ul>
+
+<p>When we do a quick search with the <code class="language-plaintext highlighter-rouge">ls</code> command we can see that the file named <code class="language-plaintext highlighter-rouge">data.txt</code> is located in the home directory</p>
+
+<p>If we output the data using the <code class="language-plaintext highlighter-rouge">cat</code> command we get an output of a lot of strings</p>
+
+<p>We need to search for the only unique string</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat data.txt | sort | uniq -c</code></li>
+</ul>
+
+<p>This gives us a list of all the strings in the file and the amount of times they appear</p>
+
+<p>However there is one string that only appears one time and that is our password for the next level</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit8" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit10" class="btn btn-blue">Next Level</a></p>
+:ET

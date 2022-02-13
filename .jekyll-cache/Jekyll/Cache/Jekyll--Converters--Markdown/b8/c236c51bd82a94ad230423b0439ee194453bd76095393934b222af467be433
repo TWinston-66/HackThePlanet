@@ -1,0 +1,38 @@
+I"ã<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-23">Bandit: Level 2â†’3</h1>
+
+<p><img src="https://i.imgur.com/O1k8zy9.png" alt="bandit level-2-3" /></p>
+
+<p>The goal of this level is to get the password for the next level out of the file name <code class="language-plaintext highlighter-rouge">spaces in this filename</code></p>
+
+<p>To accomplish this we need to know how to handle spaces in file names</p>
+
+<p>First we need to log into the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit2@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9</code></li>
+</ul>
+
+<p>We know that the target file is located in the home directory but we can check using the <code class="language-plaintext highlighter-rouge">ls</code> command</p>
+
+<p>To read the file we need to add <code class="language-plaintext highlighter-rouge">'</code> before and after the file name</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat 'spaces in this filename'</code></li>
+</ul>
+
+<p>We add the <code class="language-plaintext highlighter-rouge">'</code> so that the machine can recognize the spaces that are being used in the file name</p>
+
+<p>Then the password for the next level gets outputted</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit2" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit4" class="btn btn-blue">Next Level</a></p>
+:ET

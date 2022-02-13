@@ -1,0 +1,70 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-1920">Bandit: Level 19→20</h1>
+
+<p><img src="https://i.imgur.com/XjhgxYl.png" alt="bandit level-19-20" /></p>
+
+<p>The goal of this level is to the password for the next level from the <code class="language-plaintext highlighter-rouge">/etc/bandit_pass/bandit20</code> file</p>
+
+<p>To accomplish this we are going to take advantage of some escalated privileges on the setuid binary in the home directory</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit19@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x</code></li>
+</ul>
+
+<p>When we do a quick <code class="language-plaintext highlighter-rouge">ls</code> search we can see a file named <code class="language-plaintext highlighter-rouge">bandit20-do</code></p>
+
+<p>If we run a <code class="language-plaintext highlighter-rouge">file</code> command on that file we get back that the file is a <code class="language-plaintext highlighter-rouge">setuid ELF</code></p>
+
+<p>A setuid elf is a binary executable that has special permissions that allow for unprivileged users to run that program with elevated privileges if exploited right</p>
+
+<p>We can double check for the setuid flag by running <code class="language-plaintext highlighter-rouge">ls -l</code></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">-l</code> argument is searching for all files and providing more details on them</p>
+
+<p>In this case the detail we want are the permission flags so we can check for that setuid flag</p>
+
+<p>We can see that the permission flags for our setuid binary are <code class="language-plaintext highlighter-rouge">-rwsr-x---</code></p>
+
+<p>The most important part of that is the <code class="language-plaintext highlighter-rouge">s</code> flag because that is the flag denoting setuid</p>
+
+<p>Now that we know the executable has special privileges we need to find out what it does and see if we can use it to get the password</p>
+
+<p>We can run the executable…</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">./bandit20-do</code></li>
+</ul>
+
+<p>And we get the output…</p>
+
+<p><code class="language-plaintext highlighter-rouge">Run a command as another user.
+  Example: ./bandit20-do id</code></p>
+
+<p>If we run <code class="language-plaintext highlighter-rouge">./bandit20-do id</code> we get a list of the users it can be run as</p>
+
+<p>One if those users is bandit20…which means that when we run this file we run a command as bandit20</p>
+
+<p>Which also means we can use this file to gain the necessary rights to read the password for the next level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">./bandit20-do cat /etc/bandit_pass/bandit20</code></li>
+</ul>
+
+<p>First we are running the file to get those access rights</p>
+
+<p>Then we are reading the contents of the bandit20 password file</p>
+
+<p>When this is run the <code class="language-plaintext highlighter-rouge">cat</code> command does its job and outputs the password</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">GbKksEFF4yrVs6il55v6gwY5aVje5f0j</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit19" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit21" class="btn btn-blue">Next Level</a></p>

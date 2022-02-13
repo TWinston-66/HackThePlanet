@@ -1,0 +1,61 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="121020">12/10/20</h3>
+<h1 id="bandit-level-2122">Bandit: Level 21→22</h1>
+
+<p><img src="https://i.imgur.com/vWPSh9e.png" alt="bandit level-21-22" /></p>
+
+<p>The goal find what command is being run by the Cron configuration to get the password for the next level</p>
+
+<p>To accomplish this we are going to need to understand what Cron is and how it works</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit21@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr</code></li>
+</ul>
+
+<p>Once we are logged in we look in the <code class="language-plaintext highlighter-rouge">etc/cron.d/</code> as the challenge suggests</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cd /etc/cron.d/</code></li>
+</ul>
+
+<p>If we do a quick search with <code class="language-plaintext highlighter-rouge">ls</code> we can find a bunch of files with the same naming scheme <code class="language-plaintext highlighter-rouge">cronjob_bandit...</code></p>
+
+<p>First we need to understand what Cron is and what these files are</p>
+
+<p>Cron is a time based task schedular in Unix systems</p>
+
+<p>A Cron Job is the task itself</p>
+
+<p>A Crontab is a file that regulates and schedules the different Cron Jobs</p>
+
+<p>The files inside <code class="language-plaintext highlighter-rouge">etc/cron.d/</code> are a bunch of Crontab files</p>
+
+<p>If we output the contents of the Crontab named <code class="language-plaintext highlighter-rouge">cronjob_bandit22</code> then we get the instructions for how Cron is going to handle that job</p>
+
+<p><code class="language-plaintext highlighter-rouge">@reboot bandit22 /usr/bin/cronjob_bandit22.sh &amp;&gt; /dev/null</code>
+<code class="language-plaintext highlighter-rouge">* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &amp;&gt; /dev/null</code></p>
+
+<p>We can see that it is going to run a file – <code class="language-plaintext highlighter-rouge">/usr/bin/cronjob_bandit22.sh</code></p>
+
+<p>If we go to that directory we can see that there is a bunch of shell scripts (<code class="language-plaintext highlighter-rouge">.sh</code>) that are run by the Cron Jobs in the <code class="language-plaintext highlighter-rouge">/etc/cron.d/</code> directory</p>
+
+<p>If we output the contents of <code class="language-plaintext highlighter-rouge">cronjob_bandit22.sh</code> using <code class="language-plaintext highlighter-rouge">cat</code> we can see what that shell script does when run</p>
+
+<p><code class="language-plaintext highlighter-rouge">chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv</code> means modifying the permission of that file</p>
+
+<p><code class="language-plaintext highlighter-rouge">cat /etc/bandit_pass/bandit22 &gt; /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv</code>
+redirects the bandit22‘s password to the t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv file, located in tmp.</p>
+
+<p>Knowing that the password for the next level is stored inside <code class="language-plaintext highlighter-rouge">/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv</code> we can just dump the contents using <code class="language-plaintext highlighter-rouge">cat</code></p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit21" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/docs/writeup-not-posted-bandit" class="btn btn-blue">Next Level</a></p>

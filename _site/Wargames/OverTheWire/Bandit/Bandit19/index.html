@@ -1,0 +1,52 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-1819">Bandit: Level 18→19</h1>
+
+<p><img src="https://i.imgur.com/dI2UY3g.png" alt="bandit level-18-19" /></p>
+
+<p>The goal of this level is to get the password from a file named <code class="language-plaintext highlighter-rouge">readme</code> in the home directory</p>
+
+<p>To accomplish this we are going to use an ssh argument</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit18@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd</code></li>
+</ul>
+
+<p>However when we run this we get a message saying <code class="language-plaintext highlighter-rouge">Bye Bye!</code> then our connection gets disconnected</p>
+
+<p>This is caused by the modified <code class="language-plaintext highlighter-rouge">.bashrc</code> file</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">.bashrc</code> file is run automatically and is responsible for creating a shell session</p>
+
+<p>Because we don’t have a shell to run a <code class="language-plaintext highlighter-rouge">cat</code> command on the <code class="language-plaintext highlighter-rouge">readme</code> file then we have to find a way to run a command without a shell</p>
+
+<p>We can do that exact thing with an ssh argument</p>
+
+<ul>
+  <li>
+    <p>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"</code></p>
+  </li>
+  <li>
+    <p>Enter the password <code class="language-plaintext highlighter-rouge">kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd</code></p>
+  </li>
+</ul>
+
+<p>This command is running the <code class="language-plaintext highlighter-rouge">cat</code> command as soon as a connection is made</p>
+
+<p>This bypass the creation of a shell instance</p>
+
+<p>This can also be useful if we have a machine we are connecting to that we only have to run one command on</p>
+
+<p>When this is run the password is outputted</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit18" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit20" class="btn btn-blue">Next Level</a></p>

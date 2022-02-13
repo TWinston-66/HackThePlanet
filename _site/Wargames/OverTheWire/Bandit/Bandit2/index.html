@@ -1,0 +1,38 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120720">12/07/20</h3>
+<h1 id="bandit-level-12">Bandit: Level 1→2</h1>
+
+<p><img src="https://i.imgur.com/Dz8iX06.png" alt="bandit level-1-2" /></p>
+
+<p>The goal of this level is to get the password for the next level out of the file named <code class="language-plaintext highlighter-rouge">-</code></p>
+
+<p>To accomplish this we need to know how to handle special characters in file names</p>
+
+<p>First we need to log into the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit1@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">boJ9jbbUNNfktd78OOpsqOltutMc3MY</code></li>
+</ul>
+
+<p>We know that the target file is located in the home directory but we can check using the <code class="language-plaintext highlighter-rouge">ls</code> command</p>
+
+<p>To read the file we need to add a <code class="language-plaintext highlighter-rouge">./</code> before the file name</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat ./-</code></li>
+</ul>
+
+<p>We add the <code class="language-plaintext highlighter-rouge">./</code> so that the machine can recognize the special character <code class="language-plaintext highlighter-rouge">-</code> that is being used as the file name</p>
+
+<p>Then the password for the next level gets outputted</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit3/" class="btn btn-blue">Next Level</a></p>
+

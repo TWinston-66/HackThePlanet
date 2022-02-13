@@ -1,0 +1,66 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="121020">12/10/20</h3>
+<h1 id="bandit-level-2021">Bandit: Level 20→21</h1>
+
+<p><img src="https://i.imgur.com/d9PpAAf.png" alt="bandit level-20-21" /></p>
+
+<p>The goal of this level is to e the setuid binary to transit the password for the next level</p>
+
+<p>To accomplish this we are going to use the skills and knowledge around setuid binaries from last level in conjunction with a netcat listener</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit20@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">GbKksEFF4yrVs6il55v6gwY5aVje5f0j</code></li>
+</ul>
+
+<p>When we do a quick <code class="language-plaintext highlighter-rouge">ls</code> search we can see a file named <code class="language-plaintext highlighter-rouge">suconnect</code></p>
+
+<p>If we run a <code class="language-plaintext highlighter-rouge">file</code> command on that file we get back that the file is a <code class="language-plaintext highlighter-rouge">setuid ELF</code></p>
+
+<p>We can double check for the setuid flag by running <code class="language-plaintext highlighter-rouge">ls -l</code></p>
+
+<p>We can see that the permission flags for our setuid binary are <code class="language-plaintext highlighter-rouge">-rwsr-x---</code></p>
+
+<p>We can run the executable…</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">./suconnect</code></li>
+</ul>
+
+<p>And we get the output…</p>
+
+<p><code class="language-plaintext highlighter-rouge">Usage: ./suconnect &lt;portnumber&gt;
+This program will connect to the given port on localhost using TCP. If it receives the correct password from the other side, the next password is transmitted back.</code></p>
+
+<p>This means that we need to create a listener on our local machine so that when we run <code class="language-plaintext highlighter-rouge">./suconnect</code> we can get the password transmitted to us</p>
+
+<p>We can use the tool Netcat to create a listener</p>
+
+<p><code class="language-plaintext highlighter-rouge">nc -l localhost -p 61337</code></p>
+
+<p>However we also need to submit the password from the previous level to <code class="language-plaintext highlighter-rouge">./suconnect</code></p>
+
+<p>To do this we are going to use the Netcat listener along with piping</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l localhost -p 61337</code></li>
+</ul>
+
+<p>We then have to go back to the Bandit machine and run the <code class="language-plaintext highlighter-rouge">./suconnect</code> file with the port <code class="language-plaintext highlighter-rouge">61337</code> as an argument</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">./suconnect 61337</code></li>
+</ul>
+
+<p>When this is run the password gets outputted</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit20" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit22" class="btn btn-blue">Next Level</a></p>

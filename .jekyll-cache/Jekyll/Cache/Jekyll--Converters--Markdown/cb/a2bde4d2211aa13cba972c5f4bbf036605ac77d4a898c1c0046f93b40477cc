@@ -1,0 +1,44 @@
+I"½<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-1516">Bandit: Level 15â†’16</h1>
+
+<p><img src="https://i.imgur.com/8mjMAtN.png" alt="bandit level-15-16" /></p>
+
+<p>The goal of this level is to retrieve the password for the next level via port 30001 and SSL encryption</p>
+
+<p>To accomplish this we are going to be using piping and openssl</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit15@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">BfMYroe26WYalil77FoDi9qh59eK5xNr</code></li>
+</ul>
+
+<p>We need to encrypt the password and submit it to port 30001</p>
+
+<p>To do this we are going to use the <code class="language-plaintext highlighter-rouge">openssl</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" | openssl s_client -connect localhost:30001 -ign_eof</code></li>
+</ul>
+
+<p>This command is piping the password to openssl</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">openssl s_client</code> part is instantiating a client in which we can use the connect to port 30001</p>
+
+<p>We then use the <code class="language-plaintext highlighter-rouge">-connect</code> argument to connect to that port on localhost</p>
+
+<p>Then we use the <code class="language-plaintext highlighter-rouge">-ing_eof</code> to stop the port from stopping our connection</p>
+
+<p>When we run the command we get the next password</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">cluFn7wTiGryunymYOu4RcffSxQluehd</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit15" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit17" class="btn btn-blue">Next Level</a></p>
+:ET

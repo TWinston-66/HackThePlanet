@@ -1,0 +1,57 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-1314">Bandit: Level 13→14</h1>
+
+<p><img src="https://i.imgur.com/TPX9Hd1.png" alt="bandit level-13-14" /></p>
+
+<p>The goal of this level is to obtain the private ssh key that we can use to log into the next level</p>
+
+<p>Remember that <code class="language-plaintext highlighter-rouge">localhost</code> is the hostname of the machine you are working on</p>
+
+<p>To accomplish this we are going to use the <code class="language-plaintext highlighter-rouge">head</code> command as well as some ssh arguments</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit13@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL</code></li>
+</ul>
+
+<p>When we do a quick search with the <code class="language-plaintext highlighter-rouge">ls</code> command we can see that there is a file named <code class="language-plaintext highlighter-rouge">sshkey.private</code> is located in the home directory</p>
+
+<p>If we run a <code class="language-plaintext highlighter-rouge">file</code> command to identify the file type we can then see that it is a <code class="language-plaintext highlighter-rouge">PEM RSA private key</code></p>
+
+<p>A <code class="language-plaintext highlighter-rouge">PEM RSA private key</code> is a private key format that stores an RSA private key, for use with cryptographic systems like ssh in this case</p>
+
+<p>An RSA key ia a key that is encoded using PEM encoding which is an algorithm that uses base64 to encode</p>
+
+<p>If we output the data using the <code class="language-plaintext highlighter-rouge">cat</code> command we get an output of an RSA key</p>
+
+<p>This is the key that we need to use to login to the next server to get the Level 14 password</p>
+
+<p>We can use this key and ssh in unison</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit14@localhost -i sshkey.private</code></li>
+</ul>
+
+<p>The <code class="language-plaintext highlighter-rouge">-i</code> argument is setting the <code class="language-plaintext highlighter-rouge">sshkey.private</code> file as the identity or login info to use</p>
+
+<p>Once we have been logged in then we can go to <code class="language-plaintext highlighter-rouge">/etc/bandit_pass</code> as instructed in the challenge problem</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cd /etc/bandit_pass</code></li>
+</ul>
+
+<p>With a quick <code class="language-plaintext highlighter-rouge">ls</code> search we find a bunch of text files containing the password to all of the levels however we only have permission to view the file for bandit14</p>
+
+<p>We can do a <code class="language-plaintext highlighter-rouge">cat</code> output and get the password</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit13" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit15" class="btn btn-blue">Next Level</a></p>

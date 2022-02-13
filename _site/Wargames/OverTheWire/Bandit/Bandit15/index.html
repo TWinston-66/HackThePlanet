@@ -1,0 +1,33 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-1415">Bandit: Level 14→15</h1>
+
+<p><img src="https://i.imgur.com/H3JCffd.png" alt="bandit level-14-15" /></p>
+
+<p>The goal of this level is to retrieve the password for the next level via port 30000</p>
+
+<p>To accomplish this we are going to be using piping and Netcat</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit14@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e</code></li>
+</ul>
+
+<p>The command is submitting the password to port 30000 on local host</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc localhost 30000</code></li>
+</ul>
+
+<p>This command then outputs the password for the next level</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">BfMYroe26WYalil77FoDi9qh59eK5xNr</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit14" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit16" class="btn btn-blue">Next Level</a></p>

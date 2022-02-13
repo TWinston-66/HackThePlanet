@@ -1,0 +1,31 @@
+I"…<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120720">12/07/20</h3>
+<h1 id="bandit-level-0">Bandit: Level 0</h1>
+
+<p><img src="https://i.imgur.com/pNbJPT4.png" alt="bandit level-0" /></p>
+
+<p>The goal of this Level is to log into the game</p>
+
+<p>To accomplish this we need to be able to use the service ssh</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit0@bandit.labs.overthewire.org -p 2220</code></li>
+</ul>
+
+<p>This connects to the host <code class="language-plaintext highlighter-rouge">bandit.labs.overthewire.org</code> with the user <code class="language-plaintext highlighter-rouge">bandit0</code> via ssh on port <code class="language-plaintext highlighter-rouge">2220</code></p>
+
+<ul>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">bandit0</code></li>
+</ul>
+
+<p>This is the given password for the user <code class="language-plaintext highlighter-rouge">bandit0</code></p>
+
+<p>Once you have connected then proceed to Level 0-1</p>
+
+<h3 id="after-each-level-you-can-use-the-clear-command-to-clear-the-screen-for-a-fresh-start-each-level">After each level you can use the <code class="language-plaintext highlighter-rouge">clear</code> command to clear the screen for a fresh start each level</h3>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit1/" class="btn btn-blue">Next Level</a></p>
+
+:ET

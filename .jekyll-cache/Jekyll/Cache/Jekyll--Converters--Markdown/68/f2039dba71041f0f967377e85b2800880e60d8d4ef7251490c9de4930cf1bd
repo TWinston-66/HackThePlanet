@@ -1,0 +1,43 @@
+I"3<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-1718">Bandit: Level 17→18</h1>
+
+<p><img src="https://i.imgur.com/grQdpTx.png" alt="bandit level-17-18" /></p>
+
+<p>The goal of this level is to compare the two password files to identify and extract the password for the next level</p>
+
+<p>To accomplish this we are going to use the <code class="language-plaintext highlighter-rouge">diff</code> command</p>
+
+<p>First we need to log onto the level</p>
+
+<p>Logging onto this level is going to be different because we have to use the RSA key we obtained last level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit16@bandit.labs.overthewire.org -p 2220 -i bandit17.key</code></li>
+</ul>
+
+<p>We are using the <code class="language-plaintext highlighter-rouge">-i</code> to specify the use of an ssh key</p>
+
+<p>Now that we are logged in we can do a quick <code class="language-plaintext highlighter-rouge">ls</code> search to check that both the files are in the home directory</p>
+
+<p>We now have to compare the two files</p>
+
+<p>To do this we are going to be using the <code class="language-plaintext highlighter-rouge">diff</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">diff passwords.new passwords.old</code></li>
+</ul>
+
+<p>The first result is our password</p>
+
+<p>The second is red herring that can be tested using some additional arguments</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit17" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit19" class="btn btn-blue">Next Level</a></p>
+:ET

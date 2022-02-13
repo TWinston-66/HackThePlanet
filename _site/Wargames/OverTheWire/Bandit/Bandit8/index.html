@@ -1,0 +1,39 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-78">Bandit: Level 7→8</h1>
+
+<p><img src="https://i.imgur.com/R9ScQkU.png" alt="bandit level-7-8" /></p>
+
+<p>The goal of this level is to get the password for the next level in a file called <code class="language-plaintext highlighter-rouge">data.txt</code> next to the word millionth</p>
+
+<p>To accomplish this we are going to use the <code class="language-plaintext highlighter-rouge">grep</code> command</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit7@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs</code></li>
+</ul>
+
+<p>When we do a quick search with the <code class="language-plaintext highlighter-rouge">ls</code> command we can see that the file named <code class="language-plaintext highlighter-rouge">data.txt</code> is located in the home directory</p>
+
+<p>If we output the data using the <code class="language-plaintext highlighter-rouge">cat</code> command we get an output of a lot of strings</p>
+
+<p>We need to search those strings for the word millionth and we can do that using <code class="language-plaintext highlighter-rouge">grep</code></p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat data.txt | grep "millionth"</code></li>
+</ul>
+
+<p>This command searches the output of the <code class="language-plaintext highlighter-rouge">cat</code> command for the string that includes the word <code class="language-plaintext highlighter-rouge">millionth</code></p>
+
+<p>Once the command is run we get the string that contains the password</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">cvX2JJa4CFALtqS87jk27qwqGhBM9plV</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit7" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/docs/writeup-not-posted-bandit" class="btn btn-blue">Next Level</a></p>

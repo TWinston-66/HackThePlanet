@@ -1,0 +1,227 @@
+<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="71521">7/15/21</h3>
+<h1 id="crack-the-hash-task-1">Crack The Hash: Task 1</h1>
+
+<h2 id="hash-1">Hash #1</h2>
+
+<p><img src="https://i.imgur.com/s3EDF4A.png" alt="Hash1" /></p>
+
+<p>To crack these hashes I am going to be using Hashcat as I find it to be very efficient as it takes advantage of my GPU</p>
+
+<p>I am also going to be using the RockYou.txt password list. The list can be downloaded from the link below.</p>
+
+<p><a href="https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt" class="btn btn-blue">RockYou List</a></p>
+
+<p>This hash can be cracked using the command…</p>
+
+<ul>
+  <li>hashcat -m 0 hash.hash rockyou.txt</li>
+</ul>
+
+<p>The <code class="language-plaintext highlighter-rouge">-m 0</code> part of the command gives the hash type – in this case md5 (All hash types can be found using the hashcat help menu <code class="language-plaintext highlighter-rouge">hashcat --help</code>)</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">hash.hash</code> is the file that I put the hash into – This just allows for a cleaner command</p>
+
+<p>Finally there is the file path to the RockYou password list</p>
+
+<p>When this command is run, you should get an output similar to this…</p>
+
+<p><img src="https://i.imgur.com/vo95V5A.png" alt="Cracked1" /></p>
+
+<p>You can read all of the stats that Hashcat gave us but the important part is the place where it gives us the cracked hash</p>
+
+<p><code class="language-plaintext highlighter-rouge">48bb6e862e54f2a795ffc4e541caed4d: *CRACKED HASH RESULT*</code></p>
+
+<p>## Hash #2</p>
+
+<p><img src="https://i.imgur.com/K6xTwiX.png" alt="Hash2" /></p>
+
+<p>As described in the hint we need to figure out which version of SHA this hash is</p>
+
+<p>To do this we can use a tool on TunnelsUP called Hash Analyzer</p>
+
+<p><img src="https://i.imgur.com/NC9l6eD.png" alt="Analyze2" /></p>
+
+<p>Hash Analyzer tells us that this hash is a SHA1 hash</p>
+
+<p>Remember to add the new hash to the <code class="language-plaintext highlighter-rouge">hash.hash</code> file</p>
+
+<p>This hash can be cracked using the command…</p>
+
+<ul>
+  <li>hashcat -m 100 hash.hash rockyou.txt</li>
+</ul>
+
+<p>We use <code class="language-plaintext highlighter-rouge">-m 100</code> to give us the SHA1 hash type</p>
+
+<p>When this command is run, you should get an output similar to this…</p>
+
+<p><img src="https://i.imgur.com/LDWK1Uo.png" alt="Cracked2" /></p>
+
+<p>You can read all of the stats that Hashcat gave us but the important part is the place where it gives us the cracked hash</p>
+
+<p><code class="language-plaintext highlighter-rouge">cbfdac6008f9cab4083784cbd1874f76618d2a97: *CRACKED HASH RESULT*</code></p>
+
+<h2 id="hash-3">Hash #3</h2>
+
+<p><img src="https://i.imgur.com/QJjAglL.png" alt="Hash3" /></p>
+
+<p>Once again we can use the TunnelsUP Hash Analyzer to tell us which version of SHA this hash is</p>
+
+<p><img src="https://i.imgur.com/QP0rtvK.png" alt="Analyze3" /></p>
+
+<p>Hash Analyzer tells us that this hash is a SHA2-256 hash</p>
+
+<p>Remember to add the new hash to the <code class="language-plaintext highlighter-rouge">hash.hash</code> file</p>
+
+<p>This hash can be cracked using the command…</p>
+
+<ul>
+  <li>hashcat -m 1400 hash.hash rockyou.txt</li>
+</ul>
+
+<p>We use <code class="language-plaintext highlighter-rouge">-m 1400</code> to give us the SHA2-256 hash type</p>
+
+<p>When this is command is run, you should get an output similar to this…</p>
+
+<p>(Here I switched to Ubuntu 21.04)</p>
+
+<p><img src="https://i.imgur.com/3viXIxT.png" alt="Cracked3" /></p>
+
+<p>You can read all of the stats that Hashcat gave us but the important part is the place where it gives us the cracked hash</p>
+
+<p><code class="language-plaintext highlighter-rouge">1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032: *CRACKED HASH RESULT*</code></p>
+
+<h2 id="hash-4">Hash #4</h2>
+
+<p><img src="https://i.imgur.com/lxdIFYU.png" alt="Hash4" /></p>
+
+<p>Checking the hash with TunnelsUP tells us that this hash is a <code class="language-plaintext highlighter-rouge">bcrypt</code> hash</p>
+
+<p>Remember to add the new hash to the <code class="language-plaintext highlighter-rouge">hash.hash</code> file</p>
+
+<p>In the hint it tells us that this type of hash can take a long time to crack…</p>
+
+<p>As you can see, hashcat gives me the estimate of over 12 days to brute-force crack the hash</p>
+
+<p><img src="https://i.imgur.com/hf62DRI.png" alt="Hash4_Estimate" /></p>
+
+<p>The hint tells us to filter the rockyou list for four letter words, so that is what I decided to do</p>
+
+<p>I ended up writing a quick python script that creates a new list named <code class="language-plaintext highlighter-rouge">rockyou_filtered.txt</code> that contains only the four letter passwords from the original rockyou list</p>
+
+<p>Here is the code…</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">######### Filter RockYou Password List for x amount letter words #########
+</span>
+<span class="c1"># Read in RockYou List
+</span><span class="n">file1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'rockyou.txt'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
+<span class="n">Lines</span> <span class="o">=</span> <span class="n">file1</span><span class="p">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="n">file1</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># Set target word length
+</span><span class="n">word_length</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="c1"># Filter Line by Line + Write all target length words to list
+</span><span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Lines</span><span class="p">)</span>
+
+<span class="n">file2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'rockyou_filtered_2.txt'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">Lines</span><span class="p">:</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="s">''</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="o">==</span> <span class="n">word_length</span><span class="p">:</span>
+        <span class="n">file2</span><span class="p">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">line</span> <span class="o">+</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+
+<span class="n">file2</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>To use this script just put a file called <code class="language-plaintext highlighter-rouge">filter.py</code> in the same directory as your rockyou.txt file then run it using…</p>
+
+<ul>
+  <li>python3 filter.py</li>
+</ul>
+
+<p>Just as a word of warning, this is definitely not the fastest way to accomplish this, this is just the way I did it</p>
+
+<p>Also beware the script does take a little bit to run</p>
+
+<p>Finally, now that we have an updated wordlist we can crack the hash using the command…</p>
+<ul>
+  <li>hashcat -m 3200 hash.hash rockyou_filtered.txt -w 3</li>
+</ul>
+
+<p>Here we use the <code class="language-plaintext highlighter-rouge">-m 3200</code> to crack bcrypt hashes</p>
+
+<p>I use the <code class="language-plaintext highlighter-rouge">-w 3</code>  option to set the workload to performance level 3…</p>
+
+<p>This simply puts a higher workload on the system to make the crack run faster</p>
+
+<p>Warning! hashcat does say that level 3 will make the desktop unresponsive while running…</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ Workload Profiles ] -
+
+  # | Performance | Runtime | Power Consumption | Desktop Impact
+ ===+=============+=========+===================+=================
+  1 | Low         |   2 ms  | Low               | Minimal
+  2 | Default     |  12 ms  | Economic          | Noticeable
+  3 | High        |  96 ms  | High              | Unresponsive
+  4 | Nightmare   | 480 ms  | Insane            | Headless
+
+</code></pre></div></div>
+<p>When this command is run, you should get an output similar to this…</p>
+
+<p><img src="https://i.imgur.com/oKWEQnx.png" alt="Cracked4" /></p>
+
+<p>You can read all of the stats that Hashcat gave us but the important part is the place where it gives us the cracked hash</p>
+
+<p><code class="language-plaintext highlighter-rouge">$2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom: *CRACKED HASH RESULT*</code></p>
+
+<h2 id="hash-5">Hash #5</h2>
+
+<p><img src="https://i.imgur.com/520yrOM.png" alt="Hash5" /></p>
+
+<p>The hint tells us that the hash is an MD4 hash</p>
+
+<p>Remember to add the new hash to the <code class="language-plaintext highlighter-rouge">hash.hash</code> file</p>
+
+<p>When you try and crack the hash using the rockyou list like we have been, using the command…</p>
+
+<ul>
+  <li>hashcat -m 900 hash.hash rockyou.txt</li>
+</ul>
+
+<p>We get the status output from hashcat saying <code class="language-plaintext highlighter-rouge">Exhausted</code></p>
+
+<p>This means that hashcat has run through every possible password in the list and failed to crack the hash against every singe one</p>
+
+<p>This is because this password is not in the rockyou password list</p>
+
+<p>I ended up using the CrackStation password list which can be downloaded here…</p>
+
+<p><a href="https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm" class="btn btn-blue">CrackStation List</a></p>
+
+<p>I recommend downloading the http mirror version as it is easier to deal with after downloading it, even though it is slower</p>
+
+<p>After you have download we need to decompress (<code class="language-plaintext highlighter-rouge">-d</code>) the <code class="language-plaintext highlighter-rouge">.gz</code> archive file, which can be done using the command…</p>
+
+<ul>
+  <li>gzip -d crackstation.txt.gz</li>
+</ul>
+
+<p>This command will take a little bit to run</p>
+
+<p>We can then crack the hash with the new wordlist, using the command…</p>
+
+<ul>
+  <li>hashcat -m 900 hash.hash crackstation.txt -w 3</li>
+</ul>
+
+<p>The command will first take a little bit to build a dictionary cache before it starts trying to crack the hash</p>
+
+<p>When this command is run, you should get an output similar to this…</p>
+
+<p><img src="https://i.imgur.com/6uudtde.png" alt="Cracked5" /></p>
+
+<p>You can read all of the stats that Hashcat gave us but the important part is the place where it gives us the cracked hash</p>
+
+<p><code class="language-plaintext highlighter-rouge">279412f945939ba78ce0758d3fd83daa: *CRACKED HASH RESULT*</code></p>

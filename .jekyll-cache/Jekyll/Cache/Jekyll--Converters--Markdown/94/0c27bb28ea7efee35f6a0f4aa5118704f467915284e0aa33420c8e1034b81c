@@ -1,0 +1,60 @@
+I"õ<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-45">Bandit: Level 4â†’5</h1>
+
+<p><img src="https://i.imgur.com/SEGWnb8.png" alt="bandit level-4-5" /></p>
+
+<p>The goal of this level is to get the password out of the only human-readable inside the <code class="language-plaintext highlighter-rouge">inhere</code> directory</p>
+
+<p>The tip given is a good tip that was discussed in level 0</p>
+
+<p>To accomplish this we to navigate to the <code class="language-plaintext highlighter-rouge">inhere</code> directory and search for a file that is human-readable then read the contents from that file to get the password</p>
+
+<p>First we need to log into the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit4@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">pIwrPrtPN36QITSp3EQaw936yaFoFgAB</code></li>
+</ul>
+
+<p>We need to navigate into the <code class="language-plaintext highlighter-rouge">inhere</code> directory using the <code class="language-plaintext highlighter-rouge">ls</code> command</p>
+
+<p>Once there we can use the <code class="language-plaintext highlighter-rouge">file</code> command to search for data types to identify the only human-readable file</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">file</code> command allows us to identify the file type (such as text or executable) and the type of data that is contained in the file</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">file ./-file*</code></li>
+</ul>
+
+<p>This <code class="language-plaintext highlighter-rouge">file</code> command searches for all files which is denoted by <code class="language-plaintext highlighter-rouge">*</code>, including hidden ones which is denoted by <code class="language-plaintext highlighter-rouge">./</code></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">-file</code> part of the command is going to output the data type of the data inside of any files that have <code class="language-plaintext highlighter-rouge">-file</code> in their names</p>
+
+<p>Once the command has ran we can see that it has outputted all the files and their data types</p>
+
+<p>We can then see that the only file that does not have the data type of <code class="language-plaintext highlighter-rouge">data</code> is file <code class="language-plaintext highlighter-rouge">-file07</code></p>
+
+<p>It shows the data type as <code class="language-plaintext highlighter-rouge">ASCII text</code> which is text that we humans can recognize as letters of the English alphabet</p>
+
+<p>To read the data from that file we can again use the <code class="language-plaintext highlighter-rouge">cat</code> command</p>
+
+<p>However we have to handle the <code class="language-plaintext highlighter-rouge">-</code> in the file name</p>
+
+<p>To do that we need to put <code class="language-plaintext highlighter-rouge">./</code> in front of the file</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat ./-file07</code></li>
+</ul>
+
+<p>Then the password for the next level gets outputted</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">koReBOKuIDDepwhWk7jZC0RTdopnAYKh</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit4" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit6" class="btn btn-blue">Next Level</a></p>
+:ET

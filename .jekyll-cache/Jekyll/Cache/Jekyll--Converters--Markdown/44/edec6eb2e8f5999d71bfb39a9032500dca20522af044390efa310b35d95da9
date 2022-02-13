@@ -1,0 +1,19 @@
+I"ÿ<h1 id="crack-the-hash">Crack The Hash</h1>
+<p><strong>Here is the <a href="https://tryhackme.com/room/crackthehash">link</a> to the original challenge page</strong></p>
+
+<h2 id="note">Note:</h2>
+<ol>
+  <li>
+    <p>I start out by using Windows with <a href="https://ubuntu.com/wsl">Ubuntu WSL2</a> in the <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Windows Terminal</a>, then I switch to Ubuntu 21.04 in the GNOME terminal. This switch is indicated. You can also use <a href="https://putty.org/">putty</a> or a virtual machine.</p>
+  </li>
+  <li>
+    <p>My solutions will most likely not be the only way or the correct way to complete the challenges. Therefore take what I say with a grain of salt.</p>
+  </li>
+  <li>
+    <p>If you have any questions join the Discord server linked on the <a href="https://https://twinston-66.github.io/HackThePlanet/">Home</a> page of this website and you can DM me or ask any questions on the server</p>
+  </li>
+</ol>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/TryHackMe/CrackTheHash/Task1" class="btn btn-blue mr-10">Task 1</a>                  <a href="https://twinston-66.github.io/HackThePlanet/TryHackMe/CrackTheHash/Task2" class="btn btn-blue mr-10">Task 2</a></p>
+
+:ET

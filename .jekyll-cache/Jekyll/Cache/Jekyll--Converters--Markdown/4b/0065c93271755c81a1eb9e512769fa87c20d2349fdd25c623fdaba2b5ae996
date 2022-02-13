@@ -1,0 +1,60 @@
+I"�<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-67">Bandit: Level 6→7</h1>
+
+<p><img src="https://i.imgur.com/h6tbqej.png" alt="bandit level-6-7" /></p>
+
+<p>The goal is this level is to to locate a file that is somewhere on the server that has a certain size and is owned by certain a certain user and group</p>
+
+<p>To accomplish this we are going to once again use the find command</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit6@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">DXjZPULLxYr17uwoI01bNLQbtFemEgo7</code></li>
+</ul>
+
+<p>If we do a quick search for any files in the home directory using the <code class="language-plaintext highlighter-rouge">ls</code> command we can see that nothing gets outputted</p>
+
+<p>This means the file is most likely hidden</p>
+
+<p>So we are going to execute the search from the home directory</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">find / -user bandit7 -group bandit6 -size 33c</code></li>
+</ul>
+
+<p>We are using the find command to find our password file with those specifications</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">/</code> part of the command is to look for all files</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">-user bandit7 -group bandit6</code> part is looking for a file that is owned by both that user and that group</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">-size 33c</code> part is looking for a file that is 33 bytes in size</p>
+
+<p>When this command is run we get a list of files that it found matching those requirements</p>
+
+<p>However we can see that we do not have permission to view all of the files except one</p>
+
+<p>That one file we can work with is our password file that is called…</p>
+
+<p><code class="language-plaintext highlighter-rouge">/var/lib/dpkg/info/bandit7.password</code></p>
+
+<p>We can read the data from that file using the <code class="language-plaintext highlighter-rouge">cat</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat /var/lib/dpkg/info/bandit7.password</code></li>
+</ul>
+
+<p>Then the password for the next level gets outputted</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit6" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit8" class="btn btn-blue">Next Level</a></p>
+:ET

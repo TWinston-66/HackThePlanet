@@ -1,0 +1,47 @@
+I"<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120720">12/07/20</h3>
+<h1 id="bandit-level-01">Bandit: Level 0→1</h1>
+
+<p><img src="https://i.imgur.com/5Ry9aTa.png" alt="bandit level-0-1" /></p>
+
+<p>The goal of this level is to get the password for the next level out of the <code class="language-plaintext highlighter-rouge">readme</code> file</p>
+
+<p>To accomplish this we need to output the contents of a file</p>
+
+<p>First we need to log in using the steps from the last level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit0@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">bandit0</code></li>
+</ul>
+
+<p>To find this file we need to search the home directory for any directorys or files</p>
+
+<ul>
+  <li>Type the command 	<code class="language-plaintext highlighter-rouge">ls</code></li>
+</ul>
+
+<p>This displays all the files and directorys in the current (home) directory</p>
+
+<p>We can then see that a file named <code class="language-plaintext highlighter-rouge">readme</code> is outputted</p>
+
+<p>This is the file we are looking for</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">cat readme</code></li>
+</ul>
+
+<p>This outputs the contents of the file <code class="language-plaintext highlighter-rouge">readme</code></p>
+
+<p>Then the password for the next level gets outputted</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">boJ9jbbUNNfktd78OOpsqOltutMc3MY1</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit0" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit2/" class="btn btn-blue">Next Level</a></p>
+
+:ET

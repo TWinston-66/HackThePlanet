@@ -1,0 +1,40 @@
+I"‡	<h3 id="written-by-twinston-66">Written By: TWinston-66</h3>
+<h3 id="120820">12/08/20</h3>
+<h1 id="bandit-level-910">Bandit: Level 9â†’10</h1>
+
+<p><img src="https://i.imgur.com/y5E6ql4.png" alt="bandit level-9-10" /></p>
+
+<p>The goal of this level is to get the password for the next level in a file called <code class="language-plaintext highlighter-rouge">data.txt</code> that has several <code class="language-plaintext highlighter-rouge">=</code>s in front of it</p>
+
+<p>We can accomplish this by using the <code class="language-plaintext highlighter-rouge">strings</code> command to list all of the different strings in the file</p>
+
+<p>First we need to log onto the level</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">ssh bandit9@bandit.labs.overthewire.org -p 2220</code></li>
+  <li>Enter the password <code class="language-plaintext highlighter-rouge">UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR</code></li>
+</ul>
+
+<p>When we do a quick search with the <code class="language-plaintext highlighter-rouge">ls</code> command we can see that the file named <code class="language-plaintext highlighter-rouge">data.txt</code> is located in the home directory</p>
+
+<p>If we output the data using the <code class="language-plaintext highlighter-rouge">cat</code> command we get an output of a lot of strings and characters</p>
+
+<p>To sort through those characters we need to separate the <code class="language-plaintext highlighter-rouge">strings</code> command</p>
+
+<ul>
+  <li>Type the command <code class="language-plaintext highlighter-rouge">strings data.txt</code></li>
+</ul>
+
+<p>Then we can scroll down and we can see that there are many strings that are preceded by equal signs</p>
+
+<p>The last string that is preceded by equal signs are in the same format and length as past passwords so that is our password</p>
+
+<ul>
+  <li>Copy the password <code class="language-plaintext highlighter-rouge">truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk</code></li>
+  <li>Type <code class="language-plaintext highlighter-rouge">exit</code> to logout</li>
+</ul>
+
+<p><a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/" class="btn btn-blue">Bandit</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit9" class="btn btn-blue">Back</a>
+<a href="https://twinston-66.github.io/HackThePlanet/Wargames/OverTheWire/Bandit/Bandit11" class="btn btn-blue">Next Level</a></p>
+:ET
