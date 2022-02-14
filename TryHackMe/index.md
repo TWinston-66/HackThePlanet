@@ -19,4 +19,4 @@ A good guide for this can be found [here](https://tryhackme.com/access)...
 
 
 [Crack The Hash](https://twinston-66.github.io/HackThePlanet/TryHackMe/CrackTheHash){: .btn .btn-blue }
-[Blue](https://twinston-66.github.io/HackThePlanet/TryHackMe/../../../../Blue){: .btn .btn-blue }
+[Blue](https://twinston-66.github.io/HackThePlanet/TryHackMe/Blue){: .btn .btn-blue }
