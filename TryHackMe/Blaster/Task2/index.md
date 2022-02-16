@@ -27,3 +27,7 @@ The `-Pn` flag tells nmap to treat all given hosts as online, skipping the host 
 - This flag is needed because this means blocks all pings so nmap decides the host is offline and doesn't do any scans. 
 
 We could get the amount of open ports by running the same scan but without the `-A` flag, but the aggressive scan give us information that we will need later on in the room.
+
+Once the scan has run, we can see that there are `2` ports open on this machine. 
+- `80`
+- `3389`
