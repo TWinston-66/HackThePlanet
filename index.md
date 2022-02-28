@@ -25,4 +25,4 @@ The point of these writeups is to allow for a person to learn the concepts being
 ## Socials 
 If you have any recommendations, or requests for a specific writeup, or any questions at all, you can find me in the following places...
 
-[GitHub](https://github.com/TWinston-66){: .btn .fs-5 .mb-4 .mb-md-0 }                   [Discord](https://discord.gg/BpJMKG5aRP){: .btn .fs-5 .mb-4 .mb-md-0 }
+[GitHub](https://github.com/TWinston-66){: .btn .fs-5 .mb-4 .mb-md-0 }
