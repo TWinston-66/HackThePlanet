@@ -31,3 +31,34 @@ We could get the amount of open ports by running the same scan but without the `
 Once the scan has run, we can see that there are `2` ports open on this machine. 
 - `80`
 - `3389`
+
+From the results of the same scan, we can see that there is a web server running 
+
+Nmap is able to show us the `http-title` 
+- `IIS Windows Server`
+
+When then have to fuzz the web server for any hidden directories 
+
+Fuzzing is the process of using a list of possible directory names, to try and find any hidden directories on the web server 
+
+For this task, we can use `gobuster`
+
+I am using the Seclists-Master wordlist for hidden directory fuzzing 
+- https://github.com/danielmiessler/SecLists
+
+The command is...
+- `gobuster -w directory-list-2.3-medium.txt -u [machine IP]`
+
+After letting this run for a while, some directory begin to show up. After trying the directories are being found, the one that is important is...
+- `/retro`
+
+The directory brings us to a blog type webpage and the blogs are written by the username...
+- `wade`
+
+This is out potential username 
+
+After continueing to go through the blog site, we come across a post that has a potential username... 
+- `parzival` 
+
+
+Once we have this username and password, we need to use them to RDP into the target machine 
